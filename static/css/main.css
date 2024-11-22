@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #F1FAEE;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #1D3557;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+a {
+  color: #E63946;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+button {
+  background-color: #E63946;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  background-color: rgb(209.5426008969, 26.4573991031, 40.2152466368);
+  transform: scale(1.05);
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 1.1em;
+}
+.alert.error {
+  background-color: #F8D7DA;
+  border: 1px solid #F5C6CB;
+  color: #721C24;
+}
+.alert.success {
+  background-color: #D4EDDA;
+  border: 1px solid #C3E6CB;
+  color: #155724;
+}
+
+nav {
+  background-color: #1D3557;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.2em;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul li a:hover {
+  background-color: #457B9D;
+  color: #F1FAEE;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+  color: #1D3557;
+  font-size: 1.5em;
+}
+.card ul {
+  margin-top: 10px;
+}
+.card ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.card ul strong {
+  color: #457B9D;
+}
+.card ul em {
+  font-style: italic;
+  color: #888;
+}
+
+/* Estilo para los formularios */
+.form-group {
+  margin-bottom: 25px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1D3557;
+}
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  border-color: #457B9D;
+  box-shadow: 0 0 5px rgba(69, 123, 157, 0.3);
+}
+
+textarea {
+  resize: horizontal;
+  min-height: 150px;
+}
+
+button {
+  background-color: #457B9D;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+button:hover {
+  background-color: rgb(53.4292035398, 95.2433628319, 121.5707964602);
+  transform: scale(1.05);
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(69, 123, 157, 0.5);
+}
+
+button[type=submit].primary {
+  background-color: #E63946;
+}
+
+button[type=submit].secondary {
+  background-color: #457B9D;
+}
+
+button[type=submit].primary:hover {
+  background-color: rgb(209.5426008969, 26.4573991031, 40.2152466368);
+}
+
+button[type=submit].secondary:hover {
+  background-color: rgb(53.4292035398, 95.2433628319, 121.5707964602);
+}
+
+/*# sourceMappingURL=main.css.map */

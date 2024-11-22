@@ -1,0 +1,84 @@
+// _components.scss
+
+/* Estilo para los formularios */
+.form-group {
+    margin-bottom: 25px;
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: $primary-color;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 12px;
+        border-radius: $border-radius;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        font-size: 1em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+            border-color: $secondary-color;
+            box-shadow: 0 0 5px rgba($secondary-color, 0.3);
+        }
+    }
+}
+
+textarea {
+    resize: horizontal;
+    min-height: 150px;
+}
+
+
+// _components.scss o _base.scss
+
+button {
+    background-color: $secondary-color;  // Usamos el color secundario para los botones
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: $border-radius;
+    font-size: 1.1em;
+    cursor: pointer;
+    display: inline-block;  // Cambiamos de block a inline-block para que no ocupe todo el ancho
+    text-align: center;
+    margin-top: 15px;  // Espaciado superior para separar los botones del formulario
+
+    // Estilos para el hover
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    &:hover {
+        background-color: darken($secondary-color, 10%);
+        transform: scale(1.05);
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba($secondary-color, 0.5);
+    }
+
+    // Ancho automático y centrado
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Ajustamos el diseño de los botones "Iniciar sesión" y "Registrarse" para no ser tan iguales
+button[type="submit"].primary {
+    background-color: $button-color;  // Usamos el color principal para los botones de acción (como "Iniciar sesión")
+}
+
+button[type="submit"].secondary {
+    background-color: $secondary-color;  // Usamos el color secundario para botones de registro
+}
+
+button[type="submit"].primary:hover {
+    background-color: darken($button-color, 10%);
+}
+
+button[type="submit"].secondary:hover {
+    background-color: darken($secondary-color, 10%);
+}
